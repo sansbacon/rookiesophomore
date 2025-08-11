@@ -1,0 +1,7 @@
+site_name: Rookiesophomore
+repo_url: https://github.com/sansbacon/rookiesophomore
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - API Reference: api.md
