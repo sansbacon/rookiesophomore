@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rookiesophomore"
+version = "0.1.0"
+description = "Library for projecting, ranking, and simulating fantasy football players and leagues (rookies & sophomores)"
+authors = [
+    { name = "Eric Truett" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib"
+    "typer"
+]
+
+[tool.setuptools.packages.find]
+where = ["rookiesophomore"]
+
+[project.scripts]
+rookiesophomore = "rookiesophomore.cli:app"
